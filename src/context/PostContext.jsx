@@ -28,7 +28,7 @@ const PostProvider = ({ children }) => {
         <PostContext.Provider
           value={{
             posts,
-            addNewPost
+            addNewPost,
           }}
         >
             {children}

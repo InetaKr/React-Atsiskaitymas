@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import LogIn from './components/LogIn';
 import Register from './components/Register';
-import HomePage from './components/HomePage';
+import Home from './components/Home';
 import AddPage from './components/AddPage';
 import Header from './components/Header';
 
@@ -13,7 +13,7 @@ const App = () => {
    <Routes>
     <Route path='/' element={<LogIn/>} />
     <Route path='/register' element={<Register/>}/>
-    <Route path='/home' element ={<HomePage/>}/>
+    <Route path='/home' element ={<Home/>}/>
     <Route path='/add'element={<AddPage/>}/>
    </Routes>  
    </>
