@@ -1,9 +1,16 @@
 {
-    "users":[{
-        "email":"InetaKr@meow.com",
-        "password":"Meow22",
-        "id":"1"
+  "users": [
+    {
+      "email": "CatLover@meow.com",
+      "password": "CatsRule1",
+      "confirmPassword": "CatsRule1",
+      "id": 1675367512675
+    },
+    {
+      "email": "InetaKr@meow.com",
+      "password": "Meow22",
+      "confirmPassword": "Meow22",
+      "id": 1675367690566
     }
-
-    ]
+  ]
 }

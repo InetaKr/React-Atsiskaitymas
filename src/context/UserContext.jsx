@@ -17,12 +17,27 @@ const UserProvider = ({ children }) =>{
         usersData();
     }, []);
 
+    const addNewUser = (newUser) =>{
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers:{'Content-Type': 'application/json'},
+            body: JSON.stringify(newUser)
+        })
+        .then(res => res.json())
+        .then(usersData =>{
+            setUsers([...users, newUser]);
+        });
+    }
+
+
+
     return(
        <UserContext.Provider
          value={{
             users,
             loggedInUser,
-            setLoggedInUser
+            setLoggedInUser,
+            addNewUser
 
          }}
        

@@ -31,18 +31,24 @@ const LogIn = () => {
       return (
      <>
      <form onSubmit={handleSubmit}>
+      <label>
+        Email:
       <input 
         type="email"
         value={logInInputs.email}
         onChange= {(e) => setLogInInputs({...logInInputs, email: e.target.value})
         }
       />
+      </label>
+      <label>
+        Password:
       <input 
         type="password"
         value={logInInputs.password}
         onChange= {(e) => setLogInInputs({...logInInputs, password: e.target.value})
         }
       />
+      </label>
       <button type="submit"> Log In </button>
      </form>
      {errorMessage && <p>{errorMessage}</p>}  
