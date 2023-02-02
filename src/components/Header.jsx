@@ -1,11 +1,18 @@
 import { Link, Outlet } from 'react-router-dom';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import UserContext from '../context/UserContext';
 import logo from '../media/logo.png'
 
 const Header = () => {
 
-  const { loggedInUser } = useContext(UserContext)
+  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
+  const navigation = useNavigate();
+
+  const logOutUser = () => {
+    setLoggedInUser(null);
+    navigation('/');
+  }
 
     return (
      <>
@@ -17,6 +24,7 @@ const Header = () => {
           </Link>
         </div>
         {loggedInUser ? (
+          <>
           <div>
             <div>
               <Link to="/home">Home</Link>
@@ -25,6 +33,12 @@ const Header = () => {
               <Link to="/add">Add</Link>
             </div>
           </div>
+          <div >
+          {loggedInUser && (
+            <button onClick={() => logOutUser()}>Log Out</button>
+          )}
+        </div>
+        </>
         ):(
           <div>
             <Link to="/">Log In</Link>
