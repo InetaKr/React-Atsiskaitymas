@@ -8,7 +8,7 @@ const PostProvider = ({ children }) => {
 
     useEffect (() => {
         const postData = async () => {
-            const res = await fetch('http://localhost:5000/posts');
+            const res = await fetch('http://localhost:5000/cats');
             const postData = await res.json();
             setPosts(postData)
         };
@@ -16,7 +16,7 @@ const PostProvider = ({ children }) => {
     }, [])
 
     const addNewPost = async (newPost) => {
-        await fetch('http://localhost:5000/posts', {
+        await fetch('http://localhost:5000/cats', {
             method: "POST",
             body: JSON.stringify(newPost),
             headers: {'Content-Type': 'application/json'},

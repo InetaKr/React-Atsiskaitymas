@@ -13,9 +13,13 @@
       "id": 1675367690566
     }
   ],
-  "posts": [
+  "cats": 
+  [
     {
-      
+      "image":"https://kittentoob.com/wp-content/uploads/2015/05/11.jpg",
+      "catName":"Morty",
+      "description":"Meet Morty my new kitten.He is the best! A little bit needy but playful. He  brightens up my day. I love him.",
+      "id":1675367511345
     }
   ]
 }
