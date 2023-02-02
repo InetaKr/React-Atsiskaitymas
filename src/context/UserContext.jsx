@@ -22,6 +22,7 @@ const UserProvider = ({ children }) =>{
          value={{
             users,
             loggedInUser,
+            setLoggedInUser
 
          }}
        
