@@ -13,13 +13,24 @@
       "id": 1675367690566
     }
   ],
-  "cats": 
-  [
+  "cats": [
     {
-      "image":"https://kittentoob.com/wp-content/uploads/2015/05/11.jpg",
-      "catName":"Morty",
-      "description":"Meet Morty my new kitten.He is the best! A little bit needy but playful. He  brightens up my day. I love him.",
-      "id":1675367511345
+      "image": "https://kittentoob.com/wp-content/uploads/2015/05/11.jpg",
+      "catName": "Morty",
+      "description": "Meet Morty my new kitten.He is the best! A little bit needy but playful. He  brightens up my day. I love him.",
+      "id": 1675367511345
+    },
+    {
+      "image": "https://media.istockphoto.com/id/1172290687/photo/cat-surfing-on-internet.jpg?s=612x612&w=0&k=20&c=9vXRmDhJNkLkIgMFrzxSpXWEWsh5fcm5HgukbKmfS4k=",
+      "catName": "Boss",
+      "description": "This is Boss. He really thinks he is some millionaire Ceo... Every time I work next to my computer he needs to have a keyboard too... Also, he is always looking at me and judging...He definitely would give me a bad work review... And I am pretty sure he thinks I am his secretary. ;) Love him to death though.",
+      "id": 1675378735446
+    },
+    {
+      "image": "https://qph.cf2.quoracdn.net/main-qimg-9b3329d898f72463e1e3efab8efc0a04.webp",
+      "catName": "Ginger",
+      "description": "Yep, everytime I need to work. :D Can I use this as an excuse to my boss why I did not finish my project on time? ",
+      "id": 1675379145958
     }
   ]
 }

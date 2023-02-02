@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import LogIn from './components/LogIn';
 import Register from './components/Register';
 import Home from './components/Home';
-import AddPage from './components/AddPage';
+import AddPost from './components/AddPost';
 import Header from './components/Header';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
     <Route path='/' element={<LogIn/>} />
     <Route path='/register' element={<Register/>}/>
     <Route path='/home' element ={<Home/>}/>
-    <Route path='/add'element={<AddPage/>}/>
+    <Route path='/add'element={<AddPost/>}/>
    </Routes>  
    </>
   );
