@@ -1,5 +1,5 @@
 import UserContext from "../context/UserContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Formik, Form, Field } from "formik";
 import * as yup from 'yup';
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,6 @@ const Register = () => {
     confirmPassword: ''
   };
   const {users, addNewUser, setLoggedInUser } = useContext(UserContext);
-  const [invalidEmail, setInvalidEmail] = useState(false);
   const navigate = useNavigate()
 
   const handleSubmit = (values,{ setSubmitting }) =>{
@@ -20,11 +19,7 @@ const Register = () => {
       setSubmitting(false);
       return;
     }
-    if (users.find(user => user.email === values.email)){
-      setInvalidEmail(true);
-      setSubmitting(false);
-    }else {
-      let newUser = {
+    let newUser = {
         ...values,
         id: Date.now()
       };
@@ -32,14 +27,18 @@ const Register = () => {
       addNewUser(newUser);
       setLoggedInUser(newUser);
       navigate('/home');
+    
     }
-  }
+  
 
   const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
 
   const validationSchema = yup.object().shape({
     email: yup.string()
       .email ('Must be valid email')
+      .test('email-exists', 'Email already exists', value => {
+        return users.find(user => user.email === value) ? false : true;
+      })
       .max(255)
       .required('Email is required'),
       password: yup.string()
@@ -64,9 +63,7 @@ const Register = () => {
           <Field 
             type="email" name="email" value={values.email}
             onChange={(e) => setValues({ ...values, email: e.target.value })}
-          />
-          {invalidEmail && <span>Username already taken</span>}
-           
+          />  
           {errors.email && touched.email ? 
             <div className="error-message">{errors.email}</div>
             :null

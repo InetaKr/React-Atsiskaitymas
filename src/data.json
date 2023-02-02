@@ -11,6 +11,12 @@
       "password": "Meow22",
       "confirmPassword": "Meow22",
       "id": 1675367690566
+    },
+    {
+      "email": "LigitaPaw@meow.com",
+      "password": "Paw11",
+      "confirmPassword": "Paw11",
+      "id": 1675380629812
     }
   ],
   "cats": [
