@@ -27,7 +27,10 @@ const AddPost = () => {
 
     return (
      <>
-      <form onSubmit={handleSubmit}>
+     <div className="form-wrapper">
+      <form onSubmit={handleSubmit} className="form">
+        <h1>Show Your Cat</h1>
+        <div className="label-wrapper">
         <label>
           Image:
           <input type="text" name="image"
@@ -46,8 +49,10 @@ const AddPost = () => {
             value={postInputs.description}
             onChange={(e) => setPostInputs({...postInputs, description:e.target.value})}/>
         </label>
+        </div>
         <input type="submit" value="Create" />
-      </form>     
+      </form>  
+      </div> 
      </>
     );
   }

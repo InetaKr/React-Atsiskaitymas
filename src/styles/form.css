@@ -44,7 +44,7 @@
 	margin-bottom: 20px;
 }
 
-.form input[type=password], .form input[type=email] {
+.form input[type=password], .form input[type=email], .form input[type=text] {
 	border: none;
 	border-bottom: 2px solid rgb(204,108,108);
 	background: transparent;
@@ -92,4 +92,14 @@
 
 .label-wrapper{
     margin: 20px;
+}
+
+.form textarea{
+    border: none;
+	border-bottom: 2px solid rgb(204,108,108);
+	background: transparent;
+	outline: none;
+	height: 60px;
+    width: 100%;
+	font-size: 20px;
 }
