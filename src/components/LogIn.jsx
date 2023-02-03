@@ -30,9 +30,12 @@ const LogIn = () => {
 
       return (
      <>
+     <div className="login-form-wrapper">
      <form onSubmit={handleSubmit} className="login-form">
+      <h1>Log In</h1>
       <label>
         Email:
+        <br />
       <input 
         type="email"
         value={logInInputs.email}
@@ -42,6 +45,7 @@ const LogIn = () => {
       </label>
       <label>
         Password:
+        <br />
       <input 
         type="password"
         value={logInInputs.password}
@@ -50,8 +54,9 @@ const LogIn = () => {
       />
       </label>
       <button type="submit"> Log In </button>
+      {errorMessage && <p>{errorMessage}</p>}
      </form>
-     {errorMessage && <p>{errorMessage}</p>}  
+     </div>
      </>
     );
   }
