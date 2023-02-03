@@ -31,30 +31,30 @@ const AddPost = () => {
       <form onSubmit={handleSubmit} className="form">
         <h1>Show Your Cat</h1>
         <div className="label-wrapper">
-        <label>
-          Image:
-          <input type="text" name="image"
-            value={postInputs.image}
-            onChange={(e) => setPostInputs({...postInputs, image:e.target.value})}/>
-        </label>
-        <label>
-          Cat Name:
-          <input type="text" name="catName"
-            value={postInputs.catName}
-            onChange={(e) => setPostInputs({...postInputs, catName:e.target.value})}/>
-        </label>
-        <label>
-          Tell Us about your Cat:
-          <textarea type="text" name="description"
-            value={postInputs.description}
-            onChange={(e) => setPostInputs({...postInputs, description:e.target.value})}/>
-        </label>
+          <label>
+            Image:
+            <input type="text" name="image"
+              value={postInputs.image}
+              onChange={(e) => setPostInputs({...postInputs, image:e.target.value})}/>
+          </label>
+          <label>
+            Cat Name:
+            <input type="text" name="catName"
+              value={postInputs.catName}
+              onChange={(e) => setPostInputs({...postInputs, catName:e.target.value})}/>
+          </label>
+          <label>
+            Tell Us about your Cat:
+            <textarea type="text" name="description"
+              value={postInputs.description}
+              onChange={(e) => setPostInputs({...postInputs, description:e.target.value})}/>
+          </label>
         </div>
-        <input type="submit" value="Create" />
+          <input type="submit" value="Create" />
       </form>  
-      </div> 
-     </>
+    </div> 
+    </>
     );
   }
-  
+   
   export default AddPost;

@@ -29,8 +29,6 @@ const UserProvider = ({ children }) =>{
         });
     }
 
-
-
     return(
        <UserContext.Provider
          value={{
@@ -38,9 +36,7 @@ const UserProvider = ({ children }) =>{
             loggedInUser,
             setLoggedInUser,
             addNewUser
-
-         }}
-       
+         }}      
        >
         {children}
        </UserContext.Provider> 

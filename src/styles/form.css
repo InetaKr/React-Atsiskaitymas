@@ -1,6 +1,6 @@
 .form-wrapper{
     display:flex;
-  justify-content: center;
+    justify-content: center;
 }
 
 .form{
@@ -36,7 +36,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color:rgb(140,76,76);
-   
 }
 
 .form input{
@@ -87,7 +86,6 @@
     margin:20px;
     color: black;
     font-size: 15px;
-
 }
 
 .label-wrapper{
