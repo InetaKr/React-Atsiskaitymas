@@ -30,9 +30,10 @@ const LogIn = () => {
 
       return (
      <>
-     <div className="login-form-wrapper">
-     <form onSubmit={handleSubmit} className="login-form">
+     <div className="form-wrapper">
+     <form onSubmit={handleSubmit} className="form">
       <h1>Log In</h1>
+      <div className="label-wrapper">
       <label>
         Email:
         <br />
@@ -53,6 +54,7 @@ const LogIn = () => {
         }
       />
       </label>
+      </div>
       <button type="submit"> Log In </button>
       {errorMessage && <p>{errorMessage}</p>}
      </form>

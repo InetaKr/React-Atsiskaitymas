@@ -57,8 +57,11 @@ const Register = () => {
       onSubmit={handleSubmit}
     >
       {({ values,errors, touched, setValues }) => (
-        <Form >
-          <label>
+        <div className="form-wrapper">
+        <Form  className="form">
+          <h1>Register</h1>
+          <div className="label-wrapper">
+           <label>
             Email:
           <Field 
             type="email" name="email" value={values.email}
@@ -91,10 +94,12 @@ const Register = () => {
             : null
           }
           </label>
+          </div>
           <div>
         <input type="submit" value="Register" />
         </div>
         </Form>
+        </div>
       )}
     </Formik>
   );
