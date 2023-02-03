@@ -1,6 +1,7 @@
 @import './header.css';
 @import './footer.css';
 @import './form.css';
+@import './posts.css';
 
 body{
     background-color: rgb(247,217,215);;

@@ -6,7 +6,7 @@ const Post = ({ data }) => {
     const { loggedInUser } = useContext(UserContext);
 
     return (
-        <div>
+        <div className="card-wrapper">
           {loggedInUser && (
             <>
               <img src={data.image} alt={data.catName} />
