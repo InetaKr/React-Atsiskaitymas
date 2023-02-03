@@ -40,7 +40,7 @@ const Header = () => {
         </div>
         </>
         ):(
-          <div>
+          <div className='menuLinks1'>
             <Link to="/">Log In</Link>
             <Link to="/register">Register</Link>
           </div>

@@ -1,0 +1,10 @@
+@import './header.css';
+
+body{
+    background-color: rgb(247,217,215);;
+    color: rgb(7,6,6);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}                                                 
