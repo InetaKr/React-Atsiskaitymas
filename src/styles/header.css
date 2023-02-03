@@ -19,13 +19,13 @@ nav{
     width: 100%;    
 }
 
-.menuLinks1{
+.menuLinks{
     display: flex;
     gap: 4rem;
     margin-right: 2rem;
 }
 
-.menuLinks1 a{
+.menuLinks a{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -36,8 +36,32 @@ nav{
     text-shadow: 7px 5px 4px rgb(204,108,108);   
 }
 
-.menuLinks1 a:hover{
+.menuLinks a:hover{
     cursor: pointer;
     color: rgb(247,217,215);
+    opacity: 1;
+}
+
+.menuLinks button{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 130px;
+    height: 40px;
+    border-color: transparent;
+    border-radius: 10px;
+    color: rgb(247,217,215);
+    background-color: rgb(251,131,131);
+    text-transform: uppercase;
+    opacity: 0.7;
+    box-shadow: 7px 5px 4px rgb(204,108,108);  
+
+}
+
+.menuLinks button:hover{
+    cursor: pointer;
+    color: rgb(251,131,131);
+    background-color: rgb(247,217,215);
     opacity: 1;
 }

@@ -25,22 +25,20 @@ const Header = () => {
         </div>
         {loggedInUser ? (
           <>
-          <div>
+          <div className='menuLinks'>
             <div>
               <Link to="/home">Home</Link>
             </div>
             <div>
               <Link to="/add">Add</Link>
             </div>
-          </div>
-          <div >
           {loggedInUser && (
             <button onClick={() => logOutUser()}>Log Out</button>
           )}
         </div>
         </>
         ):(
-          <div className='menuLinks1'>
+          <div className='menuLinks'>
             <Link to="/">Log In</Link>
             <Link to="/register">Register</Link>
           </div>
